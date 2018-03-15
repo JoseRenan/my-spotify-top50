@@ -28,7 +28,7 @@ const legend = d3.legendColor()
     .classPrefix('legend');
 
 
-d3.json('top50.json', function (error, graph) {
+d3.json('myTop50Real.json', function (error, graph) {
     if (error) throw error;
 
     const types = d3.set(graph.edges.map(e => e.type)).values();
